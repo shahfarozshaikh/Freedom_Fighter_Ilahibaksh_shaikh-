@@ -4,238 +4,235 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Freedom Fighter Ilahibaksh Shaikh | Legacy</title>
+<title>Ilahibaksh Mohammedsahab Shaikh | Legacy</title>
 
 <style>
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Georgia, "Times New Roman", serif;
-  background: #f7f2e8;
-  color: #29251f;
-  line-height: 1.7;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f5ecd8;
+    color: #2b2118;
+    line-height: 1.7;
 }
 
 header {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 20px;
-  background:
-    linear-gradient(rgba(35,30,22,.82), rgba(35,30,22,.82)),
-    radial-gradient(circle at center, #8d7655, #201c17);
-  color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:
+        linear-gradient(rgba(35,25,15,.82), rgba(35,25,15,.82)),
+        url("legacy-poster.jpg") center/cover;
+    color: #fff8e8;
 }
 
 .hero {
-  max-width: 850px;
+    max-width: 950px;
 }
 
-.flag-line {
-  width: 100px;
-  height: 4px;
-  margin: 0 auto 30px;
-  background: linear-gradient(
-    to right,
-    #e67e22 33%,
-    white 33%,
-    white 66%,
-    #138808 66%
-  );
+.hero .small {
+    letter-spacing: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #e8c56a;
 }
 
 .hero h1 {
-  font-size: clamp(38px, 8vw, 76px);
-  line-height: 1.1;
-  margin-bottom: 20px;
+    font-size: clamp(42px, 8vw, 82px);
+    line-height: 1.05;
+    margin: 20px 0;
+    text-transform: uppercase;
 }
 
 .hero h2 {
-  font-size: clamp(20px, 4vw, 30px);
-  font-weight: normal;
-  color: #ead7b2;
-  margin-bottom: 25px;
+    font-size: clamp(20px, 4vw, 32px);
+    font-weight: normal;
+    color: #ead9ad;
+}
+
+.years {
+    font-size: 28px;
+    margin: 25px 0;
+    color: #e8c56a;
 }
 
 .hero p {
-  max-width: 680px;
-  margin: auto;
-  font-size: 18px;
-  color: #eee5d5;
-}
-
-.scroll {
-  display: inline-block;
-  margin-top: 45px;
-  padding: 12px 25px;
-  border: 1px solid #d6bd8a;
-  border-radius: 30px;
-  color: white;
-  text-decoration: none;
+    max-width: 750px;
+    margin: auto;
+    font-size: 19px;
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: #211d18;
-  padding: 12px;
-  text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #21180f;
+    padding: 12px;
+    text-align: center;
 }
 
 nav a {
-  color: #f3e5c8;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 14px;
+    color: #f7e5b5;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
 }
 
 section {
-  max-width: 1050px;
-  margin: auto;
-  padding: 75px 22px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 75px 22px;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 45px;
+.title {
+    text-align: center;
+    margin-bottom: 45px;
 }
 
-.section-title h2 {
-  font-size: 36px;
-  color: #493b2b;
-  margin-bottom: 10px;
+.title h2 {
+    font-size: 38px;
+    color: #6b451d;
 }
 
-.section-title p {
-  color: #756b5d;
+.title p {
+    color: #765f45;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.about img {
+    width: 100%;
+    border: 8px solid #c39a4a;
+    box-shadow: 0 12px 35px rgba(0,0,0,.2);
 }
 
 .card {
-  background: white;
-  padding: 35px;
-  border-radius: 14px;
-  box-shadow: 0 8px 30px rgba(0,0,0,.08);
-  margin-bottom: 25px;
+    background: #fffaf0;
+    padding: 30px;
+    border-left: 5px solid #a8792e;
+    box-shadow: 0 8px 25px rgba(60,40,15,.09);
+    margin-bottom: 25px;
 }
 
 .card h3 {
-  color: #5b4429;
-  margin-bottom: 12px;
-  font-size: 25px;
-}
-
-.quote {
-  text-align: center;
-  padding: 55px 25px;
-  background: #2b251e;
-  color: #f4e6ca;
-  max-width: none;
-}
-
-.quote p {
-  max-width: 750px;
-  margin: auto;
-  font-size: 25px;
-  font-style: italic;
+    color: #70471d;
+    margin-bottom: 12px;
 }
 
 .timeline {
-  border-left: 3px solid #9c7b4c;
-  margin-left: 20px;
-  padding-left: 30px;
+    border-left: 3px solid #b28742;
+    margin-left: 15px;
+    padding-left: 30px;
 }
 
-.timeline-item {
-  margin-bottom: 35px;
-  position: relative;
+.event {
+    margin-bottom: 30px;
 }
 
-.timeline-item::before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  background: #9c7b4c;
-  border-radius: 50%;
-  position: absolute;
-  left: -39px;
-  top: 8px;
+.event strong {
+    color: #70471d;
+    font-size: 20px;
 }
 
-.timeline-item h3 {
-  color: #59452c;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+.document {
+    background: #fffaf0;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(60,40,15,.1);
 }
 
-.photo-box {
-  min-height: 220px;
-  border: 2px dashed #b8a88e;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  color: #7d7365;
-  background: #fffdf8;
+.document img {
+    width: 100%;
+    display: block;
+}
+
+.document h3 {
+    margin-top: 15px;
+    color: #70471d;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.value {
+    background: #2b2118;
+    color: #f8e9c5;
+    padding: 28px;
+    text-align: center;
+}
+
+.family {
+    text-align: center;
+}
+
+.family-box {
+    display: inline-block;
+    padding: 18px 30px;
+    margin: 10px;
+    background: #fffaf0;
+    border: 2px solid #b28742;
+    border-radius: 8px;
+}
+
+.quote {
+    background: #21180f;
+    color: #f7e5b5;
+    text-align: center;
+    padding: 70px 25px;
+    font-size: 28px;
+    font-style: italic;
 }
 
 footer {
-  background: #211d18;
-  color: #d8ccb8;
-  text-align: center;
-  padding: 45px 20px;
+    background: #160f09;
+    color: #d9c69d;
+    text-align: center;
+    padding: 35px 20px;
 }
 
-footer h2 {
-  color: white;
-  margin-bottom: 12px;
-}
+@media(max-width: 750px) {
+    .about,
+    .grid,
+    .values {
+        grid-template-columns: 1fr;
+    }
 
-.small {
-  font-size: 14px;
-  margin-top: 15px;
-  color: #a99d8a;
-}
+    nav a {
+        display: inline-block;
+        margin: 4px 7px;
+    }
 
-@media (max-width: 600px) {
-  nav {
-    overflow-x: auto;
-    white-space: nowrap;
-    text-align: left;
-  }
+    .hero h1 {
+        font-size: 42px;
+    }
 
-  nav a {
-    display: inline-block;
-    margin: 0 7px;
-  }
-
-  .card {
-    padding: 25px;
-  }
-
-  section {
-    padding: 55px 18px;
-  }
-
-  .quote p {
-    font-size: 20px;
-  }
+    .quote {
+        font-size: 22px;
+    }
 }
 </style>
 </head>
@@ -243,228 +240,294 @@ footer h2 {
 <body>
 
 <header id="home">
-  <div class="hero">
-    <div class="flag-line"></div>
+    <div class="hero">
+        <div class="small">Late Freedom Fighter</div>
 
-    <h1>Ilahibaksh Shaikh</h1>
+        <h1>Ilahibaksh<br>Mohammedsahab Shaikh</h1>
 
-    <h2>Freedom Fighter • Legacy • Remembrance</h2>
+        <div class="years">1920 — 2005</div>
 
-    <p>
-      A digital tribute dedicated to the life, courage, values,
-      memories and enduring legacy of Freedom Fighter
-      <strong>Ilahibaksh Mohammedsab Shaikh</strong>.
-    </p>
+        <h2>A Life Dedicated to the Nation</h2>
 
-    <a class="scroll" href="#biography">Discover His Story ↓</a>
-  </div>
+        <p>
+            A digital tribute to the life, courage, service,
+            memories and lasting legacy of a respected freedom fighter
+            and social worker from Solapur.
+        </p>
+    </div>
 </header>
 
 <nav>
-  <a href="#home">Home</a>
-  <a href="#biography">Biography</a>
-  <a href="#legacy">Legacy</a>
-  <a href="#timeline">Timeline</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#tribute">Tribute</a>
+    <a href="#about">Biography</a>
+    <a href="#struggle">Freedom Struggle</a>
+    <a href="#documents">Documents</a>
+    <a href="#family">Family</a>
+    <a href="#legacy">Legacy</a>
 </nav>
 
-<section id="biography">
+<section id="about">
 
-  <div class="section-title">
-    <h2>His Story</h2>
-    <p>Remembering a life dedicated to courage and values</p>
-  </div>
+    <div class="title">
+        <h2>Biography</h2>
+        <p>The life and journey of Ilahibaksh Mohammedsahab Shaikh</p>
+    </div>
 
-  <div class="card">
-    <h3>Freedom Fighter Ilahibaksh Mohammedsab Shaikh</h3>
+    <div class="about">
 
-    <p>
-      This website is created to preserve and honour the memory
-      of <strong>Ilahibaksh Mohammedsab Shaikh</strong>, a
-      Freedom Fighter whose life and contribution remain an
-      important part of his family's history and legacy.
-    </p>
+        <div>
+            <img src="portrait.jpg" alt="Ilahibaksh Mohammedsahab Shaikh">
+        </div>
 
-    <br>
+        <div>
+            <div class="card">
+                <h3>Early Life</h3>
+                <p>
+                    Late Ilahibaksh Mohammedsahab Shaikh was born in
+                    1920 in Solapur, Maharashtra. He lived a life guided
+                    by courage, honesty, service and strong moral values.
+                </p>
+            </div>
 
-    <p>
-      His story is not only a chapter from the past. It is a
-      reminder of courage, sacrifice, determination and the
-      responsibility of preserving our history for future
-      generations.
-    </p>
-  </div>
+            <div class="card">
+                <h3>Service to Society</h3>
+                <p>
+                    Alongside his contribution to the freedom movement,
+                    he worked for social unity, harmony and the welfare
+                    and upliftment of weaker sections of society.
+                </p>
+            </div>
 
+            <div class="card">
+                <h3>A Life of Values</h3>
+                <p>
+                    His life reflected patriotism, integrity,
+                    selflessness and dedication to the welfare of
+                    society and the nation.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Passing & Legacy</h3>
+                <p>
+                    He passed away in 2005, leaving behind a legacy of
+                    patriotism, social service, integrity and memories
+                    that continue to be cherished by his family and
+                    future generations.
+                </p>
+            </div>
+        </div>
+
+    </div>
 </section>
 
-<section class="quote">
+<section id="struggle">
 
-  <p>
-    “A life may end, but the values, memories and legacy
-    left behind can continue for generations.”
-  </p>
+    <div class="title">
+        <h2>Freedom Struggle</h2>
+        <p>His contribution towards India's independence</p>
+    </div>
 
+    <div class="timeline">
+
+        <div class="event">
+            <strong>1920 — Birth</strong>
+            <p>
+                Born in Solapur, Maharashtra.
+            </p>
+        </div>
+
+        <div class="event">
+            <strong>From 1940 — Nationalist Work</strong>
+            <p>
+                He became associated with the Congress organisation
+                and nationalist activities.
+            </p>
+        </div>
+
+        <div class="event">
+            <strong>1942 — Quit India Movement</strong>
+            <p>
+                He actively participated in the Quit India Movement
+                and contributed to the freedom struggle.
+            </p>
+        </div>
+
+        <div class="event">
+            <strong>Underground Activities</strong>
+            <p>
+                He wrote, distributed and pasted bulletins and
+                continued supporting the movement despite police
+                raids, including work connected with the Gulbarga
+                district.
+            </p>
+        </div>
+
+        <div class="event">
+            <strong>Legacy of Service</strong>
+            <p>
+                His contribution was remembered not only for the
+                freedom struggle but also for social service and
+                community welfare.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="documents">
+
+    <div class="title">
+        <h2>Documents & Recognition</h2>
+        <p>Preserving important memories and records</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="document">
+            <img src="sanman-patra.jpg" alt="Sanman Patra">
+            <h3>Sanman Patra</h3>
+            <p>
+                Recognition issued by the Government of Maharashtra,
+                dated 7 December 1987.
+            </p>
+        </div>
+
+        <div class="document">
+            <img src="freedom-fighter-card.jpg"
+                 alt="Freedom Fighter Identity Card">
+            <h3>Freedom Fighter Identity Card / Free Pass</h3>
+            <p>
+                An important document preserving his recognition
+                as a freedom fighter.
+            </p>
+        </div>
+
+        <div class="document">
+            <img src="official-record.jpg"
+                 alt="Official Directory Record">
+            <h3>Official Directory Record</h3>
+            <p>
+                Record mentioning his social work and contribution
+                to the community.
+            </p>
+        </div>
+
+        <div class="document">
+            <img src="recommendation-letter.jpg"
+                 alt="Recommendation Letter">
+            <h3>Recommendation Letter</h3>
+            <p>
+                A letter appreciating his social service and
+                contribution to society.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="family">
+
+    <div class="title">
+        <h2>Family Legacy</h2>
+        <p>A legacy carried forward through generations</p>
+    </div>
+
+    <div class="family">
+
+        <div class="family-box">
+            <strong>Late Ilahibaksh<br>
+            Mohammedsahab Shaikh</strong>
+            <br>
+            Beloved Father & Role Model
+        </div>
+
+        <br>
+
+        <div class="family-box">
+            <strong>Salem Ilahibaksh Shaikh</strong>
+            <br>
+            Son
+        </div>
+
+        <br>
+
+        <div>
+            <div class="family-box">Shahzeb Shaikh</div>
+            <div class="family-box">Shahnigar Shaikh</div>
+            <div class="family-box">Shahfaroz Shaikh</div>
+        </div>
+
+    </div>
 </section>
 
 <section id="legacy">
 
-  <div class="section-title">
-    <h2>A Lasting Legacy</h2>
-    <p>Honouring his memory for generations to come</p>
-  </div>
+    <div class="title">
+        <h2>His Values — Our Inspiration</h2>
+        <p>The principles that continue to inspire his family</p>
+    </div>
 
-  <div class="card">
-    <h3>🇮🇳 Courage & Contribution</h3>
-    <p>
-      His association with India's freedom struggle is remembered
-      with pride by his family. His journey represents the courage
-      and spirit of those who contributed to the nation's history.
-    </p>
-  </div>
+    <div class="values">
 
-  <div class="card">
-    <h3>❤️ Family Heritage</h3>
-    <p>
-      His memories continue through his family. This digital
-      archive is created so that younger generations can learn
-      about him and understand the importance of remembering
-      those who came before us.
-    </p>
-  </div>
+        <div class="value">
+            <h3>Patriotism</h3>
+            <p>
+                Courage and dedication towards the nation.
+            </p>
+        </div>
 
-  <div class="card">
-    <h3>📜 Preserving History</h3>
-    <p>
-      Photographs, documents, memories and stories can be added
-      to this website over time, creating a permanent family
-      record of his life and legacy.
-    </p>
-  </div>
+        <div class="value">
+            <h3>Social Service</h3>
+            <p>
+                Working for social unity, harmony and community welfare.
+            </p>
+        </div>
 
+        <div class="value">
+            <h3>Integrity</h3>
+            <p>
+                Living with honesty, dignity and strong moral values.
+            </p>
+        </div>
+
+        <div class="value">
+            <h3>Selflessness</h3>
+            <p>
+                Serving others without expecting anything in return.
+            </p>
+        </div>
+
+        <div class="value">
+            <h3>Humanity</h3>
+            <p>
+                Compassion and concern for the welfare of others.
+            </p>
+        </div>
+
+        <div class="value">
+            <h3>Legacy</h3>
+            <p>
+                His values continue to inspire future generations.
+            </p>
+        </div>
+
+    </div>
 </section>
 
-<section id="timeline">
-
-  <div class="section-title">
-    <h2>Life Timeline</h2>
-    <p>A place to preserve the important moments of his journey</p>
-  </div>
-
-  <div class="timeline">
-
-    <div class="timeline-item">
-      <h3>1920 — Birth</h3>
-      <p>
-        Ilahibaksh Mohammedsab Shaikh was born in 1920.
-      </p>
-    </div>
-
-    <div class="timeline-item">
-      <h3>Freedom Struggle</h3>
-      <p>
-        His contribution and association with the freedom
-        movement became an important part of his life story.
-      </p>
-    </div>
-
-    <div class="timeline-item">
-      <h3>Legacy</h3>
-      <p>
-        His values and memories continued to live on through
-        his family and future generations.
-      </p>
-    </div>
-
-    <div class="timeline-item">
-      <h3>2005 — Remembered Forever</h3>
-      <p>
-        He passed away in 2005, leaving behind memories and
-        a legacy that continues to be remembered with pride.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<section id="gallery">
-
-  <div class="section-title">
-    <h2>Photo & Memory Gallery</h2>
-    <p>More photographs and historical documents can be added here.</p>
-  </div>
-
-  <div class="gallery">
-
-    <div class="photo-box">
-      📷<br><br>
-      Freedom Fighter Photograph
-    </div>
-
-    <div class="photo-box">
-      📜<br><br>
-      Historical Documents
-    </div>
-
-    <div class="photo-box">
-      🏅<br><br>
-      Certificates / Recognition
-    </div>
-
-    <div class="photo-box">
-      👨‍👩‍👧‍👦<br><br>
-      Family Memories
-    </div>
-
-  </div>
-
-</section>
-
-<section id="tribute">
-
-  <div class="section-title">
-    <h2>A Family Tribute</h2>
-    <p>Remembered with pride, love and respect</p>
-  </div>
-
-  <div class="card">
-
-    <p>
-      We dedicate this digital memorial to the memory of
-      <strong>Freedom Fighter Ilahibaksh Mohammedsab Shaikh</strong>.
-    </p>
-
-    <br>
-
-    <p>
-      May his story continue to inspire future generations to
-      value courage, freedom, service and the history of our nation.
-    </p>
-
-    <br>
-
-    <p>
-      <strong>His memory lives on. His legacy continues.</strong>
-    </p>
-
-  </div>
-
-</section>
+<div class="quote">
+    “His courage gave us freedom,
+    his values gave us direction.”
+    <br><br>
+    <small>Forever in our hearts. Forever our pride.</small>
+</div>
 
 <footer>
-
-  <h2>Ilahibaksh Shaikh Legacy</h2>
-
-  <p>
-    Preserving a family's history • Honouring a Freedom Fighter
-  </p>
-
-  <p class="small">
-    This website is a family-created digital tribute.
-  </p>
-
+    <h3>In Memory of</h3>
+    <p>Late Freedom Fighter Ilahibaksh Mohammedsahab Shaikh</p>
+    <p>1920 — 2005</p>
+    <br>
+    <p>Preserving his story for generations to come.</p>
 </footer>
 
 </body>
-  </html>
+</html>
