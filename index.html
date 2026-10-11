@@ -39,9 +39,35 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
   <div class="brand">ILAHIBAKSH MOHAMMEDSAHAB SHAIKH<small>FREEDOM FIGHTER • SOCIAL WORKER • HUMANITARIAN</small></div>
   <div class="navlinks">
     <a href="#home">HOME</a><a href="#life">BIOGRAPHY</a><a href="#struggle">FREEDOM STRUGGLE</a>
-    <a href="#recognition">RECOGNITION</a><a href="#family">FAMILY</a><a href="#gallery">GALLERY</a><a href="#home-today">HOME TODAY</a>
+    <a href="#recognition">RECOGNITION</a><a href="#family">FAMILY</a><a href="#gallery">GALLERY</a><a href="#home-today">HOME TODAY</a> 
   </div>
 </nav>
+
+<script>
+  function switchLang(lang) {
+    const bioEn = document.getElementById('bio-english-content');
+    const bioMr = document.getElementById('biography-mr');
+    const btnEn = document.getElementById('btn-lang-en');
+    const btnMr = document.getElementById('btn-lang-mr');
+    
+    if (lang === 'mr') {
+      if(bioEn) bioEn.style.display = 'none';
+      if(bioMr) bioMr.style.display = 'block';
+      btnMr.style.background = 'var(--gold)';
+      btnMr.style.color = '#fff';
+      btnEn.style.background = 'transparent';
+      btnEn.style.color = 'rgba(255,255,255,0.7)';
+    } else {
+      if(bioEn) bioEn.style.display = 'block';
+      if(bioMr) bioMr.style.display = 'none';
+      btnEn.style.background = 'var(--gold)';
+      btnEn.style.color = '#fff';
+      btnMr.style.background = 'transparent';
+      btnMr.style.color = 'rgba(255,255,255,0.7)';
+    }
+  }
+</script>
+
 
 <header class="hero" id="home">
   <div>
@@ -54,49 +80,31 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
   <img class="heroimg" src="portrait.png" alt="Portrait of late freedom fighter Ilahibaksh Mohammedsahab Shaikh">
 </header>
 
-<section id="life">
-  <h2 class="section-title">A Life of Courage & Service</h2>
-  <p class="subtitle">A digital tribute preserving his story, values, family memories and historical records for future generations.</p>
-  <div class="facts">
-    <div class="fact"><strong>1920</strong>Born in Solapur</div>
-    <div class="fact"><strong>1940s</strong>Freedom movement activities</div>
-    <div class="fact"><strong>1942</strong>Quit India Movement era</div>
-    <div class="fact"><strong>2005</strong>Passed away on 25 May</div>
-  </div>
-  <div class="grid2" style="margin-top:30px">
-    <article class="card">
-      <h3>Biography</h3>
-      <p>Late Ilahibaksh Mohammedsahab Shaikh was born in Solapur in 1920. From his youth, he was devoted to India's struggle for independence and to the welfare of society.</p>
-      <p>His life reflected courage, simplicity, honesty, service and strong moral values. He continued to care for people and the community, leaving behind a legacy remembered with pride by his family.</p>
-    </article>
-    <article class="card">
-      <h3>His Connection with the Freedom Movement</h3>
-      <ul class="timeline">
-        <li>Worked with the Congress organisation from around the 1940s.</li>
-        <li>Participated in the Quit India Movement of 1942.</li>
-        <li>Was involved in underground freedom activities, including spreading and circulating awareness material.</li>
-        <li>Worked in and around the Solapur–Gulbarga region during the freedom struggle.</li>
-        <li>Also took part in activities connected with the wider Gandhian movement and its ideals of truth, non-violence and service.</li>
-      </ul>
-    </article>
+<!-- सुंदर मराठी जीवनप्रवास बॉक्स (जो बटन दबाने पर ही दिखेगा) -->
+<section id="biography-mr" style="display:none; padding:30px 0;">
+  <div class="card" style="border: 2px solid var(--gold); background: #fffcf7; border-radius: 18px; box-shadow: 0 10px 30px rgba(181,138,58,0.1); text-align: left; padding: 30px;">
+    <div style="text-align:center; margin-bottom: 10px;">
+      <div class="heritage-badge" style="font-size: 11px; padding: 4px 12px;">✦ क्रांतीचे सुवर्णपर्व • अखंड राष्ट्रनिष्ठा ✦</div>
+    </div>
+    <h3 style="text-align: center; color: var(--green); font-size: 22px; margin-top: 5px; font-weight: bold;">शासकीय सन्मान प्राप्त स्वातंत्र्य सैनिक</h3>
+    <p style="text-align: center; font-size: 20px; color: var(--gold); font-weight: bold; margin-top: -10px;">श्री शेख इलाहीबक्ष महंमदसाहेब (सोलापूर)</p>
+    <div class="tricolor" style="margin: 10px auto;"><span class="saffron"></span><span class="white"></span><span class="green"></span></div>
+    
+    <p style="font-style: italic; color: var(--muted); text-align: center; font-size: 16px; max-width: 700px; margin: 15px auto 25px;">“ज्यांचे शौर्य, अथांग त्याग आणि प्रखर राष्ट्रनिष्ठा हाच आमचा खरा ऐतिहासिक वारसा आहे!”</p>
+    
+    <div style="color: #333; font-size: 15px; line-height: 1.7;">
+      <p><b>• १९४० पासून देशसेवेत सक्रिय सहभाग:</b> श्री शेख इलाहीबक्ष महंमदसाहेब हे सन १९४० पासूनच भारत देशाच्या मुक्तीसाठी काँग्रेस संघटनेत अत्यंत सक्रिय झाले होते। स्वातंत्र्य चळवळीदरम्यान त्यांनी महाराष्ट्रातील अनेक प्रमुख स्वातंत्र्यसैनिक व वरिष्ठ नेत्यांसोबत अत्यंत एकनिष्ठेने कार्य केले।</p>
+      <p><b>• १९४२ चे ‘चले जाव’ आंदोलन व भूमिगत lढा:</b> महात्मा गांधीजींच्या ‘भारत छोडो’ आंदोलनादरम्यान त्यांनी इंग्रज सरकारच्या जुलमी राजवटीविरुद्ध स्वतःला पूर्णपणे झोकून दिले आणि भूमिगत राहून स्वातंत्र्यलढ्यात सक्रिय सहभाग घेतला।</p>
+      <p><b>• ‘चरित्रकोश खंड ३’ मधील ऐतिहासिक नोंद:</b> शासकीय दस्तऐवजाच्या (खंड ३, पृष्ठ ५८५) अधिकृत नोंदीनुसार: <i>"या काळात भूमिगत कार्य; स्वातंत्र्य सैनिकांना विविध पुरविणे, प्रचारपत्रके वाटणे इत्यादींमध्ये भाग; पोलिसांकडून मारहाण।"</i></p>
+      <p><b>• काँग्रेस जन्मशताब्दी पुस्तिका व धाडसी कार्य:</b> त्यांच्या त्यागाची दखल घेऊन काँग्रेसच्या जन्मशताब्दी पुस्तिकेत (१८८५-१९८५, नोंद क्र. ११९) त्यांचा आदरपूर्वक समावेश करण्यात आला। ते रात्रीच्या वेळी गुप्तपणे बुलेटिन (पत्रके) छापणे, मोफत वाटप करणे व उत्तर कसबा परिसरातील भिंतींवर देशभक्तीपर पत्रके चिकटविण्याचे धाडसी कार्य करीत असत।</p>
+      <p><b>• ब्रिटिश पोलिसांचा छापा व ऐतिहासिक फरारी:</b> त्यांच्या क्रांतिकारी कार्यामुळे पोलिसांनी त्यांच्या घरावर सशस्त्र छापा टाकला। मात्र, पोलिसांच्या अटकेपासून बचाव करून ते सुरक्षितपणे शेजारच्या गुलबर्गा जिल्ह्यात (कर्नाटक) निसटले आणि तेथे भूमिगत राहून चळवळ अविरतपणे सुरू ठेवली।</p>
+      <p><b>• शासकीय सन्मान, पेन्शन व गौरवशाली वारसा:</b> जिल्हाधिकारी कार्यालय नोंदणी पुस्तिकेनुसार, Maharashtra शासनाने ७ डिसेंबर १९८७ रोजी त्यांना अधिकृत ‘सन्मान पत्र’ आणि स्वातंत्र्यसैनिक पेन्शन देऊन गौरविले। २५ मे २००५ रोजी या महान देशभक्ताचा ऐहिक जीवनप्रवास संपला। एक देशभक्त म्हणून त्यांनी केलेल्या त्यागाची कृतज्ञता म्हणून शासनाच्या विशेष सवलती अंतर्गत त्यांच्या मुलीला शासकीय नोकरीचा लाभ मिळाला।</p>
+    </div>
+    <div style="height: 1px; background: var(--line); max-width: 200px; margin: 20px auto;"></div>
+    <p style="text-align: center; font-size: 14px; color: var(--muted); font-weight: bold; font-style: italic; margin-bottom: 0;">एका खऱ्या राष्ट्रभक्ताच्या अलोट क्रांतीकार्याला, त्यागाला आणि अथांग देशप्रेमाला सोलापूर व आमच्या परिवाराचे विनम्र अभिवादन!</p>
   </div>
 </section>
 
-<section id="struggle" style="background:#efe3ca;max-width:none">
-  <h2 class="section-title">The Freedom Struggle</h2>
-  <p class="subtitle">His contribution was rooted in courage, sacrifice and service to the nation.</p>
-  <div class="grid2" style="max-width:1200px">
-    <article class="card">
-      <h3>From the Historical Record</h3>
-      <p>Available historical material records his association with Congress activities, participation during the 1942 movement, underground work and efforts to support the freedom movement despite police pressure.</p>
-      <p>He is remembered not only for the struggle for independence, but also for his commitment to social welfare and humanity.</p>
-    </article>
-    <article class="card">
-      <img src="freedom-movement.jpg" alt="Historical photograph connected with the freedom movement" style="width:100%;border-radius:12px">
-      <p class="note">Historical photograph from the family archive.</p>
-    </article>
-  </div>
-</section>
 
 <section id="recognition">
   <h2 class="section-title">Recognition & Support from the Government of Maharashtra</h2>
@@ -140,73 +148,23 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
   </div>
 </section>
 
-<section id="gallery" style="background:#efe3ca;max-width:none"> <!-- सुंदर मराठी जीवनप्रवास विभाग शुरू -->
-<section id="biography-mr" style="background:var(--paper); border-top: 3px solid var(--gold); border-bottom: 3px solid var(--gold); padding:75px 7%;">
-  <div style="text-align:center; margin-bottom: 15px;">
-    <div class="heritage-badge">✦ क्रांतीचे सुवर्णपर्व • अखंड राष्ट्रनिष्ठा ✦</div>
-  </div>
-  <h2 class="section-title" style="font-family:Georgia, serif; font-weight:bold;">शासकीय सन्मान प्राप्त स्वातंत्र्य सैनिक</h2>
-  <p class="subtitle" style="font-size:24px; color:var(--green); font-weight:bold; text-align:center; margin-top:-5px; letter-spacing:1px;">श्री शेख इलाहीबक्ष महंमदसाहेब (सोलापूर)</p>
-  
-  <div class="tricolor"><span class="saffron"></span><span class="white"></span><span class="green"></span></div>
-  
-  <div style="max-width:850px; margin:0 auto; text-align:center; font-style:italic; color:var(--muted); font-size:20px; margin-bottom:45px; line-height:1.6; border-left: 4px solid var(--gold); border-right: 4px solid var(--gold); padding: 0 20px;">
-    “ज्यांचे शौर्य, अथांग त्याग आणि प्रखर राष्ट्रनिष्ठा हाच आमचा खरा ऐतिहासिक वारसा आहे!”
-  </div>
-
-  <div class="grid2">
-    <div class="card" style="border-left: 5px solid var(--green); background:#fffcf7;">
-      <h3 style="font-size:19px; display:flex; align-items:center;"><span style="color:var(--gold); margin-right:8px;">✦</span> १९४० पासून देशसेवेत सक्रिय सहभाग व अखंड निष्ठा</h3>
-      <p style="font-size:15px; color:#333;">श्री शेख इलाहीबक्ष महंमदसाहेब हे सन १९४० पासूनच भारत देशाच्या मुक्तीसाठी आणि राष्ट्रसेवेच्या कार्यात काँग्रेस संघटनेत अत्यंत सक्रिय झाले होते. स्वातंत्र्य चळवळीदरम्यान त्यांनी सोलापूर व महाराष्ट्रातील अनेक प्रमुख स्वातंत्र्यसैनिक, वरिष्ठ राष्ट्रीय नेते आणि थोर राजकारण्यांच्या खांद्याला खांदा लावून अत्यंत एकनिष्ठेने व प्रामाणिकपणे कार्य केले.</p>
-    </div>
-
-    <div class="card" style="border-left: 5px solid var(--gold); background:#fffcf7;">
-      <h3 style="font-size:19px; display:flex; align-items:center;"><span style="color:var(--green); margin-right:8px;">✦</span> १९४२ चे ‘चले जाव’ आंदोलन आणि भूमिगत क्रांतिकारी लढा</h3>
-      <p style="font-size:15px; color:#333;">महात्मा गांधीजींच्या ‘भारत छोडो’ (चले जाव) आंदोलनादरम्यान त्यांनी इंग्रज सरकारच्या जुलमी राजवटीविरुद्ध आणि अन्यायकारक कायद्यांविरुद्ध स्वतःला पूर्णपणे झोकून दिले. ब्रिटिश पोलिसांच्या अटकेपासून वाचण्यासाठी त्यांनी भूमिगत राहून अत्यंत धाडसाने स्वातंत्र्यलढ्यात सक्रिय सहभाग घेतला.</p>
-    </div>
-
-    <div class="card" style="border-left: 5px solid var(--gold); background:#fffcf7;">
-      <h3 style="font-size:19px; display:flex; align-items:center;"><span style="color:var(--green); margin-right:8px;">✦</span> ‘चरित्रकोश खंड ३’ मधील ऐतिहासिक नोंद</h3>
-      <p style="font-size:15px; color:#333;">‘स्वातंत्र्य सैनिक चरित्रकोश (पश्चिम विभाग, खंड ३)’ या शासकीय दस्तऐवजाच्या पृष्ठ ५८५ वर त्यांच्या नावावर असलेल्या अधिकृत नोंदीनुसार: <i>"या काळात भूमिगत कार्य; स्वातंत्र्य सैनिकांना विविध पुरविणे, प्रचारपत्रके वाटणे इत्यादींमध्ये भाग; पोलिसांकडून मारहाण."</i> या राष्ट्रकार्यादरम्यान त्यांना ब्रिटिश पोलिसांच्या अमानुष मारहाणीचा आणि त्रासाचाही धैर्याने सामना करावा लागला.</p>
-    </div>
-
-    <div class="card" style="border-left: 5px solid var(--green); background:#fffcf7;">
-      <h3 style="font-size:19px; display:flex; align-items:center;"><span style="color:var(--gold); margin-right:8px;">✦</span> ‘काँग्रेस जन्मशताब्दी पुस्तिका’ व धाडसी कार्य</h3>
-      <p style="font-size:15px; color:#333;">त्यांच्या अतुलनीय राष्ट्रसेवेची आणि निःस्वार्थ त्यागाची दखल घेऊन काँग्रेसच्या जन्मशताब्दी पुस्तिकेत (१८८५-१९८५) त्यांच्या नावाचा आदरपूर्वक समावेश करण्यात आला. ते रात्रीच्या वेळी गुप्तपणे बुलेटिन (पत्रके) छापणे, त्यांचे मोफत वाटप करणे तसेच सोलापूर व आसपासच्या उत्तर कसबा परिसरातील भिंतींवर देशभक्तीपर पत्रके चिकटविण्याचे अत्यंत धाडसी कार्य करीत असत.</p>
-    </div>
-
-    <div class="card" style="border-left: 5px solid var(--green); background:#fffcf7;">
-      <h3 style="font-size:19px; display:flex; align-items:center;"><span style="color:var(--gold); margin-right:8px;">✦</span> ब्रिटिश पोलिसांचा सशस्त्र छापा व ऐतिहासिक फरारी</h3>
-      <p style="font-size:15px; color:#333;">त्यांच्या क्रांतिकारी कार्यामुळे ब्रिटिश पोलिसांनी त्यांच्या सोलापूरमधील घरावर सशस्त्र छापा टाकला. मात्र, पोलिसांनी अटक करण्यापूर्वीच ते सुरक्षितपणे शेजारच्या गुलबर्गा जिल्ह्यात (कर्नाटक) निसटले आणि तेथे भूमिगत राहून स्वातंत्र्याची चळवळ अविरतपणे सुरू ठेवली.</p>
-    </div>
-
-    <div class="card" style="border-left: 5px solid var(--gold); background:#fffcf7;">
-      <h3 style="font-size:19px; display:flex; align-items:center;"><span style="color:var(--green); margin-right:8px;">✦</span> शासकीय सन्मान, पेन्शन व सार्वजनिक जीवन</h3>
-      <p style="font-size:15px; color:#333;">जिल्हाधिकारी कार्यालय नोंदणी पुस्तिकेनुसार, महाराष्ट्र शासनाने ७ डिसेंबर १९८७ रोजी त्यांना अधिकृत ‘सन्मान पत्र’ आणि स्वातंत्र्यसैनिक पेन्शन देऊन गौरविले. सोलापूर महानगरपालिकेतर्फे त्यांना मोफत बस प्रवास सुविधेचा लाभ देण्यात आला. राष्ट्रीय व राज्यस्तरीय महत्त्वाच्या दिनांना त्यांना ध्वजारोहणासाठी मुख्य अतिथी म्हणून आदरपूर्वक निमंत्रित केले जात असे.</p>
-    </div>
-  </div>
-
-  <div class="card" style="max-width:950px; margin:45px auto 0; text-align:center; background:#fff8e8; border:2px solid var(--gold); border-radius:18px; box-shadow: 0 10px 30px rgba(181,138,58,0.15);">
-    <p style="font-size:17px; line-height:1.7; color:var(--green);"><b>गौरवशाली आणि अभेद्य वारसा:</b> २५ मे २००५ रोजी या महान देशभक्ताचा ऐहिक जीवनप्रवास सोलापूर येथे संपला. त्यांनी कमावलेली इभ्रत, प्रामाणिकपणा, राष्ट्रनिष्ठा आणि समाजसेवेचा पवित्र वारसा आज त्यांच्या पुढील पिढ्यांकडेही तितक्याच अभिमानाने जतन केला जात आहे. एक देशभक्त म्हणून त्यांनी केलेल्या त्यागाची कृतज्ञता म्हणून शासनाच्या विशेष सवलती अंतर्गत त्यांच्या मुलीला शासकीय नोकरीचा लाभ मिळाला.</p>
-    <div style="height:1px; background:var(--gold); max-width:250px; margin:20px auto;"></div>
-    <p style="font-size:16px; color:var(--muted); font-weight:bold; font-style:italic;">एका खऱ्या राष्ट्रभक्ताच्या अलोट क्रांतीकार्याला, त्यागाला आणि अथांग देशप्रेमाला सोलापूर व आमच्या परिवाराचे विनम्र अभिवादन!</p>
-  </div>
-</section>
-  
+<section id="gallery" style="background:#efe3ca;max-width:none">
   <h2 class="section-title">Historical Photos & Documents</h2>
   <p class="subtitle">Selected photographs and original family records preserved as part of his legacy.</p>
   <div class="gallery">
-    <figure><img src="portrait.png" alt="Portrait"><figcaption>Portrait of Ilahibaksh Mohammedsahab Shaikh</figcaption></figure>
-    <figure><img src="couple.jpg" alt="Ilahibaksh with Rasulbi"><figcaption>Ilahibaksh Mohammedsahab Shaikh with wife Rasulbi</figcaption></figure>
-    <figure><img src="sanman-patra.jpg" alt="Maharashtra Government Sanman Patra"><figcaption>Maharashtra Government Sanman Patra — 7 December 1987</figcaption></figure>
-    <figure><img src="free-travel-pass.jpg" alt="Freedom fighter free travel pass"><figcaption>Freedom Fighter Free Travel / Bus Pass</figcaption></figure>
+    <figure><img src="portrait.png" alt="Portrait of Ilahibaksh Shaikh"><figcaption>Portrait of Ilahibaksh Mohammedsahab Shaikh</figcaption></figure>
+    <figure><img src="couple.jpg" alt="Ilahibaksh with wife"><figcaption>Ilahibaksh Mohammedsahab Shaikh with wife Rasulbi</figcaption></figure>
+    <figure><img src="sanman-patra.jpg" alt="Maharashtra Government Sanman Patra"></figure>
+    <figure><img src="free-travel-pass.jpg" alt="Freedom Fighter free travel pass"></figure>
+    <figure><img src="charitrakosh-cover.jpg.jpg" alt="Swatantrya Sainik Charitrakosh Cover Page"><figcaption><b>Charitrakosh Front Page</b><br>Swatantrya Sainik Charitrakosh (Khand 3)</figcaption></figure>
+    <figure><img src="charitrakosh-page585.jpg.jpg" alt="Swatantrya Sainik Charitrakosh Page 585"><figcaption><b>Charitrakosh Record (Page 585)</b><br>Official biographical entry of Freedom Fighter</figcaption></figure>
+    <figure><img src="pension-register-1.jpg.jpg" alt="Solapur Freedom Fighter Pension Register Page 1"><figcaption><b>Collector Office RTI Record</b><br>Solapur Freedom Fighter Sanman Pension List</figcaption></figure>
+    <figure><img src="pension-register-2.jpg.jpg" alt="Solapur Freedom Fighter Pension Register Page 2"><figcaption><b>Pension Register (Page 2)</b><br>Official benefit entry of Freedom Fighter</figcaption></figure>
     <figure><img src="historical-record.jpg" alt="Historical record"><figcaption>Congress Centenary Booklet (1885-1985) — Entry No. 119</figcaption></figure>
-    <figure><img src="freedom-movement.jpg" alt="Historical freedom movement photograph"><figcaption>Historical photograph from the family archive</figcaption></figure>   <figure><img src="charitrakosh-cover.jpg.jpg" alt="Swatantrya Sainik Charitrakosh Cover Page"><figcaption><b>Charitrakosh Front Page</b><br>Swatantrya Sainik Charitrakosh (Khand 3)</figcaption></figure>
-  <figure><img src="charitrakosh-page585.jpg.jpg" alt="Swatantrya Sainik Charitrakosh Page 585"><figcaption><b>Charitrakosh Record (Page 585)</b><br>Official biographical entry of Freedom Fighter</figcaption></figure>
-  <figure><img src="pension-register-1.jpg.jpg" alt="Solapur Freedom Fighter Pension Register Page 1"><figcaption><b>Collector Office RTI Record</b><br>Solapur Freedom Fighter Sanman Pension List</figcaption></figure>
-  <figure><img src="pension-register-2.jpg.jpg" alt="Solapur Freedom Fighter Pension Register Page 2"><figcaption><b>Pension Register (Page 2)</b><br>Official benefit entry of Freedom Fighter</figcaption></figure>
+    <figure><img src="freedom-movement.jpg" alt="Historical photograph connected with the freedom movement"><figcaption>Historical Photograph of Flag Hoisting on Independence Day</figcaption></figure>
   </div>
 </section>
+
 
 <section id="home-today">
   <h2 class="section-title">The Family Home Today</h2>
