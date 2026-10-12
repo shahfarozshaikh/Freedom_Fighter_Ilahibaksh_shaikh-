@@ -48,9 +48,12 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
 </nav>
 
 <script>
+<script>
   function switchLang(lang) {
     const wrapEn = document.getElementById('main-english-wrapper');
     const wrapMr = document.getElementById('main-marathi-wrapper');
+    const titleEn = document.getElementById('hero-en-title');
+    const titleMr = document.getElementById('hero-mr-title');
     const btnEn = document.getElementById('btn-lang-en');
     const btnMr = document.getElementById('btn-lang-mr');
     const brand = document.getElementById('nav-brand');
@@ -59,6 +62,8 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
     if (lang === 'mr') {
       if(wrapEn) wrapEn.style.display = 'none';
       if(wrapMr) wrapMr.style.display = 'block';
+      if(titleEn) titleEn.style.display = 'none';
+      if(titleMr) titleMr.style.display = 'block';
       btnMr.style.background = 'var(--gold)';
       btnMr.style.color = '#fff';
       btnEn.style.background = 'transparent';
@@ -68,6 +73,8 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
     } else {
       if(wrapEn) wrapEn.style.display = 'block';
       if(wrapMr) wrapMr.style.display = 'none';
+      if(titleEn) titleEn.style.display = 'block';
+      if(titleMr) titleMr.style.display = 'none';
       btnEn.style.background = 'var(--gold)';
       btnEn.style.color = '#fff';
       btnMr.style.background = 'transparent';
@@ -75,18 +82,30 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
       brand.innerHTML = 'ILAHIBAKSH MOHAMMEDSAHAB SHAIKH<small>FREEDOM FIGHTER • SOCIAL WORKER • HUMANITARIAN</small>';
       menu.innerHTML = '<a href="#home">HOME</a><a href="#life">BIOGRAPHY</a><a href="#struggle">STRUGGLE</a><a href="#recognition">RECOGNITION</a><a href="#family">FAMILY</a><a href="#gallery">GALLERY</a><a href="#home-today">HOME TODAY</a><div style="display:inline-flex; gap:5px; margin-left:10px; border:1px solid rgba(255,255,255,0.2); padding:2px; border-radius:20px; vertical-align:middle;"><button id="btn-lang-en" onclick="switchLang(\'en\')" style="background:var(--gold); color:#fff; border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">EN</button><button id="btn-lang-mr" onclick="switchLang(\'mr\')" style="background:transparent; color:rgba(255,255,255,0.7); border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">मराठी</button></div>';
     }
-  }
-</script>
-
-<header class="hero" id="home">
-  <div>
-    <div class="heritage-badge">✦ SOLAPUR • FREEDOM FIGHTER • NATIONAL SERVICE ✦</div>
-    <h1>Ilahibaksh<br>Mohammedsahab<br>Shaikh</h1>
-    <div class="tricolor"><span class="saffron"></span><span class="white"></span><span class="green"></span></div><div class="years">1920 — 2005</div>
-    <p class="tagline" style="width:100%;max-width:620px;margin:18px auto;text-align:center;overflow-wrap:anywhere"><b>A brave son of Solapur who worked selflessly for India's independence and for the welfare of society and humanity.</b></p>
+<header class="hero" id="home" style="min-height:auto; padding:40px 5%; display:block; text-align:center;">
+  <!-- इंग्लिश मुख्य नाम का पैकेट -->
+  <div id="hero-en-title" style="display:block; text-align:center; width:100%;">
+    <div class="heritage-badge" style="margin:0 auto 15px;">✦ SOLAPUR • FREEDOM FIGHTER • NATIONAL SERVICE ✦</div>
+    <h1 style="font-size:clamp(32px, 6vw, 56px); line-height:1.1; margin:10px auto; text-align:center; width:100%; word-wrap:break-word;">Ilahibaksh<br>Mohammedsahab<br>Shaikh</h1>
+    <div class="tricolor" style="margin:15px auto;"><span class="saffron"></span><span class="white"></span><span class="green"></span></div>
+    <div class="years" style="margin-bottom:15px;">1920 — 2005</div>
+    <p class="tagline" style="width:100%; max-width:620px; margin:15px auto; text-align:center; font-size:18px;"><b>A brave son of Solapur who worked selflessly for India's independence and for the welfare of society and humanity.</b></p>
   </div>
-  <img class="heroimg" src="portrait.png" alt="Portrait">
+
+  <!-- मराठी मुख्य नाम का पैकेट -->
+  <div id="hero-mr-title" style="display:none; text-align:center; width:100%;">
+    <div class="heritage-badge" style="margin:0 auto 15px;">✦ सोलापूर • स्वातंत्र्य सैनिक • राष्ट्रीय सेवा ✦</div>
+    <h1 style="font-size:clamp(32px, 6vw, 56px); line-height:1.1; margin:10px auto; text-align:center; width:100%; word-wrap:break-word; color:var(--green);">इलाहीबक्ष<br>महंमदसाहेब<br>शेख</h1>
+    <div class="tricolor" style="margin:15px auto;"><span class="saffron"></span><span class="white"></span><span class="green"></span></div>
+    <div class="years" style="margin-bottom:15px;">१९२० — २००५</div>
+    <p class="tagline" style="width:100%; max-width:620px; margin:15px auto; text-align:center; font-size:18px;"><b>भारत देशाच्या स्वातंत्र्यासाठी आणि समाज व मानवतेच्या कल्याणासाठी निःस्वार्थपणे कार्य केलेले सोलापूरचे सुपुत्र.</b></p>
+  </div>
+
+  <div style="text-align:center; width:100%; margin-top:20px;">
+    <img class="heroimg" src="portrait.png" alt="Portrait" style="margin:0 auto; display:block; max-width:100%; width:340px;">
+  </div>
 </header>
+
   <!-- ==========================================
      MAIN ENGLISH WRAPPER (पूर्ण रूप से शुद्ध इंग्लिश)
      ========================================== -->
