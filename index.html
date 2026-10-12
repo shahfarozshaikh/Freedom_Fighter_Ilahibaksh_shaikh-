@@ -11,31 +11,28 @@
 .nav{position:sticky;top:0;z-index:20;background:rgba(13,45,34,.97);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:13px 5%;box-shadow:0 3px 16px #0003}
 .brand{font-weight:bold;color:#f0d18c}.brand small{display:block;color:#fff8e7;font-size:10px}
 .navlinks{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end;align-items:center}.navlinks a{text-decoration:none;font-size:12px;color:#fff}
-.hero{min-height:82vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:65px 8%;background:radial-gradient(circle at 85% 20%,#fff 0,#f5eddd 42%,#eadabd 100%)}
-.hero h1{font-size:clamp(32px,5.5vw,72px);line-height:1.05;margin:12px auto;color:var(--green)}
+.hero{min-height:82vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:65px 8%;background:radial-gradient(circle at 85% 20%,#fff 0,#f5eddd 42%,#eadabd 100%);text-align:center;}
+.hero h1{font-size:clamp(32px,5.5vw,72px);line-height:1.05;margin:12px auto;color:var(--green);text-align:center;}
 .years{display:inline-block;background:var(--green);color:#f4d48e;border-radius:30px;padding:5px 20px;font-weight:bold;letter-spacing:3px}
-.heroimg{width:100%;max-width:500px;justify-self:center;border:10px solid #fff8;border-radius:18px;box-shadow:0 18px 50px #5a45252e;object-fit:cover;aspect-ratio:4/5}
+.heroimg{width:100%;max-width:500px;margin:0 auto;border:10px solid #fff8;border-radius:18px;box-shadow:0 18px 50px #5a45252e;object-fit:cover;aspect-ratio:4/5;display:block}
 section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:center;color:var(--green);font-size:34px;margin:0 0 12px}.subtitle{text-align:center;color:var(--muted);max-width:800px;margin:0 auto 38px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 8px 25px #5a452514}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);background:var(--green);color:#fff;padding:25px;border-radius:18px;gap:15px;text-align:center}
-.fact strong{display:block;color:#f0d18c;font-size:25px}.recognition{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
-.recognition .card{text-align:center;padding:22px}.icon{font-size:32px;color:var(--gold)}
+.recognition{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.recognition .card{text-align:center;padding:22px}.icon{font-size:32px;color:var(--gold)}
 .family{display:grid;grid-template-columns:1fr 1fr;gap:30px}.children{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.child{background:#f8f0df;border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}.child b{color:var(--green);display:block;margin-bottom:8px}
+.child{background:#f8f0df;border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}.child b{color:var(--green);display:block;margin-bottom:5px;font-size:14px;letter-spacing:0.5px}.child .name{font-size:18px;font-weight:bold;color:var(--ink);display:block;margin-bottom:5px}.child .meta{font-size:13px;color:var(--muted);display:block;line-height:1.3}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.gallery figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:10px}
 .gallery img{width:100%;height:300px;object-fit:contain;border-radius:10px;background:var(--cream)}.gallery figcaption{padding:12px 8px;text-align:center;color:var(--muted);font-size:14px}
 .home{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}.home img{width:100%;border-radius:18px;border:5px solid #fff;box-shadow:0 12px 35px #0002}
 .mapbtn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;padding:12px 20px;border-radius:30px;margin-top:12px}
 .footer{background:var(--green);color:#fff;text-align:center;padding:50px 7%}.footer strong{color:#f0d18c;font-size:22px}.goldline{height:1px;background:var(--gold);max-width:180px;margin:20px auto}
 .tricolor{height:5px;display:flex;width:min(260px,80%);margin:18px auto 20px;border-radius:10px;overflow:hidden}
-.tricolor span{flex:1}.saffron{background:#e67e22}.white{background:#fff}.green{background:#138808}
+.tricolor span{flex:1}.saffron{background:#e67e22}.white{background:#fff Ram}.green{background:#138808}
 .heritage-badge{display:inline-block;border:1px solid var(--gold);padding:7px 16px;border-radius:30px;background:#fff8e8;color:var(--green);font-size:12px;font-weight:bold;letter-spacing:1.5px}
-@media(max-width:900px){.hero,.grid2,.family,.home,.recognition,.gallery,.children{grid-template-columns:1fr}.facts{display:flex !important;flex-wrap:wrap;justify-content:center;background:var(--green);color:#fff;padding:25px;border-radius:18px;gap:15px;text-align:center}.fact{flex:1 1 40%;max-width:45%;border-right:1px solid #fff4}.fact:nth-child(even){border-right:0}.fact:last-child{border-right:0;margin:0 auto}}
-
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding:40px 20px}.grid2,.family,.home,.recognition,.gallery,.children{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr;display:flex !important;flex-wrap:wrap;justify-content:center}.fact{flex:1 1 40%;max-width:45%;border-right:1px solid #fff4}.fact:nth-child(even){border-right:0}.fact:last-child{border-right:0;margin:0 auto}.nav{align-items:flex-start}.navlinks{gap:10px;justify-content:flex-end}}
 </style>
 </head>
 <body>
-<nav class="nav">
+  <nav class="nav">
   <div class="brand" id="nav-brand">ILAHIBAKSH MOHAMMEDSAHAB SHAIKH<small>FREEDOM FIGHTER • SOCIAL WORKER • HUMANITARIAN</small></div>
   <div class="navlinks" id="nav-links-container">
     <a href="#home">HOME</a><a href="#life">BIOGRAPHY</a><a href="#struggle">STRUGGLE</a>
@@ -47,7 +44,6 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
   </div>
 </nav>
 
-<script>
 <script>
   function switchLang(lang) {
     const wrapEn = document.getElementById('main-english-wrapper');
@@ -69,7 +65,7 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
       btnEn.style.background = 'transparent';
       btnEn.style.color = 'rgba(255,255,255,0.7)';
       brand.innerHTML = 'श्री शेख इलाहीबक्ष महंमदसाहेब<small>स्वातंत्र्य सैनिक • समाजसेवक • वंशावळ वारसा</small>';
-      menu.innerHTML = '<a href="#home">होम</a><a href="#life-mr">बायोग्राफी</a><a href="#struggle-mr">स्वातंत्र्य लढा</a><a href="#recognition-mr">शासकीय सन्मान</a><a href="#family-mr">परिवार</a><a href="#gallery">ऐतिहासिक फोटो</a><a href="#home-today-mr">निवासस्थान</a><div style="display:inline-flex; gap:5px; margin-left:10px; border:1px solid rgba(255,255,255,0.2); padding:2px; border-radius:20px; vertical-align:middle;"><button id="btn-lang-en" onclick="switchLang(\'en\')" style="background:transparent; color:rgba(255,255,255,0.7); border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">EN</button><button id="btn-lang-mr" onclick="switchLang(\'mr\')" style="background:var(--gold); color:#fff; border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">मराठी</button></div>';
+      menu.innerHTML = '<a href="#home">होम</a><a href="#life-mr">बायोग्राफी</a><a href="#struggle-mr">स्वातंत्र्य लढा</a><a href="#recognition-mr">शासकीय सन्मान</a><a href="#family-mr">परिवार</a><a href="#gallery">ऐतिहासिक फोटो</a><a href="#home-today">निवासस्थान</a><div style="display:inline-flex; gap:5px; margin-left:10px; border:1px solid rgba(255,255,255,0.2); padding:2px; border-radius:20px; vertical-align:middle;"><button id="btn-lang-en" onclick="switchLang(\'en\')" style="background:transparent; color:rgba(255,255,255,0.7); border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">EN</button><button id="btn-lang-mr" onclick="switchLang(\'mr\')" style="background:var(--gold); color:#fff; border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">मराठी</button></div>';
     } else {
       if(wrapEn) wrapEn.style.display = 'block';
       if(wrapMr) wrapMr.style.display = 'none';
@@ -82,6 +78,9 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
       brand.innerHTML = 'ILAHIBAKSH MOHAMMEDSAHAB SHAIKH<small>FREEDOM FIGHTER • SOCIAL WORKER • HUMANITARIAN</small>';
       menu.innerHTML = '<a href="#home">HOME</a><a href="#life">BIOGRAPHY</a><a href="#struggle">STRUGGLE</a><a href="#recognition">RECOGNITION</a><a href="#family">FAMILY</a><a href="#gallery">GALLERY</a><a href="#home-today">HOME TODAY</a><div style="display:inline-flex; gap:5px; margin-left:10px; border:1px solid rgba(255,255,255,0.2); padding:2px; border-radius:20px; vertical-align:middle;"><button id="btn-lang-en" onclick="switchLang(\'en\')" style="background:var(--gold); color:#fff; border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">EN</button><button id="btn-lang-mr" onclick="switchLang(\'mr\')" style="background:transparent; color:rgba(255,255,255,0.7); border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">मराठी</button></div>';
     }
+  }
+</script>
+
 <header class="hero" id="home" style="min-height:auto; padding:40px 5%; display:block; text-align:center;">
   <!-- इंग्लिश मुख्य नाम का पैकेट -->
   <div id="hero-en-title" style="display:block; text-align:center; width:100%;">
@@ -105,14 +104,12 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
     <img class="heroimg" src="portrait.png" alt="Portrait" style="margin:0 auto; display:block; max-width:100%; width:340px;">
   </div>
 </header>
-
-  <!-- ==========================================
+<!-- ==========================================
      MAIN ENGLISH WRAPPER (पूर्ण रूप से शुद्ध इंग्लिश)
      ========================================== -->
 <div id="main-english-wrapper">
   <section id="life">
     <h2 class="section-title">A Life of Courage & Service</h2>
-    <p class="subtitle">A digital tribute preserving his story, values, family memories and historical records for future generations.</p>
     <div class="facts">
       <div class="fact"><strong>1920</strong>Born in Solapur</div>
       <div class="fact"><strong>1940</strong>Joined Freedom Struggle</div>
@@ -127,13 +124,21 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
       <h3 style="text-align:center; color:var(--green); font-size:22px; font-weight:bold;">Government Honored Freedom Fighter</h3>
       <p style="text-align:center; font-size:20px; color:var(--gold); font-weight:bold; margin-top:-10px;">Shri Shaikh Ilahibaksh Mohammedsahab (Solapur)</p>
       <div class="tricolor" style="margin:10px auto;"><span class="saffron"></span><span class="white"></span><span class="green"></span></div>
+      <p style="font-style: italic; color: var(--muted); text-align: center; font-size: 16px; max-width: 700px; margin: 15px auto 25px;">“Whose bravery, immense sacrifice, and fierce patriotism remain our true historic legacy!”</p>
+      
       <div style="color:#333; font-size:15px; line-height:1.7;">
-        <p><b>• Active Contribution Since 1940:</b> Highly active in the Congress organization, dedicating himself entirely to the nation alongside senior leaders of Solapur and Maharashtra.</p>
-        <p><b>• 1942 Quit India Movement & Underground Struggle:</b> Threw himself into Mahatma Gandhi's historic movement against British rule, operating courageously as an underground revolutionary to evade police arrest.</p>
-        <p><b>• Official Record in 'Charitrakosh Volume 3':</b> According to the official document <i>'Swatantrya Sainik Charitrakosh (Vol 3, Page 585)'</i>, his entry records: "Underground work; supplied materials to freedom fighters, distributed bulletins; faced severe police beatings."</p>
-        <p><b>• Congress Centenary Booklet & Escape:</b> Respectfully included in the record (Entry 119) for secretly printing bulletins and pasting patriotic posters. Following a sudden armed police raid on his home, he escaped to Gulbarga to continue the movement.</p>
-        <p><b>• Official Government Honor (7 Dec 1987):</b> The Government of Maharashtra officially honored him with a prestigious <b>'Sanman Patra'</b> and granted the State Freedom Fighter Pension. He was regularly invited as a Chief Guest for national festivals.</p>
+        <p><b>• Active Contribution & Loyalty Since 1940:</b> Shri Shaikh Ilahibaksh Mohammedsahab became highly active in the Congress organization from 1940, dedicating himself entirely to the liberation of the nation and national service. During the freedom movement, he worked with utmost loyalty and dedication alongside prominent freedom fighters, senior national leaders, and eminent politicians of Solapur and Maharashtra.</p>
+        <p><b>• 1942 Quit India Movement & Underground Revolutionary Struggle:</b> During Mahatma Gandhi's historic 'Quit India' movement, he completely threw himself into the struggle against the tyrannical British rule and its unjust laws. To avoid arrest by the British police, he courageously participated as an underground revolutionary.</p>
+        <p><b>• 'Charitrakosh Volume 3' Official Record — Underground Work and Police High-Handedness:</b> According to the official government document <i>'Swatantrya Sainik Charitrakosh (Western Division, Volume 3)'</i> on page 585, his entry explicitly records: "Underground work during this period; distributed bulletins and supplied essential materials to freedom fighters; faced severe police beatings." He actively engaged in running the underground movement secretly, providing all possible assistance and materials to other freedom fighters, and distributing awareness bulletins. During this national service, he faced brutal torture and high-handedness from the British police with immense fortitude.</p>
+        <p><b>• Official Entry in 'Congress Centenary Booklet':</b> In recognition of his unparalleled national service and selfless sacrifice, his name and revolutionary work were respectfully included in the Congress Centenary Booklet (1885-1985). This entry stands as a significant historical documentary evidence of his contribution to the freedom struggle.</p>
+        <p><b>• Fearless Public Awareness and Agitation:</b> To ignite a fierce flame of patriotism against British rule in the minds of the citizens, he undertook the dangerous task of secretly printing bulletins at night, distributing them for free, and pasting patriotic posters on the walls of Solapur and surrounding areas (specifically the Uttar Kasba area).</p>
+        <p><b>• Armed British Police Raid & Historic Escape:</b> His patriotic and revolutionary activities caught the attention of the British authorities, leading to a sudden armed police raid on his residence in Solapur. However, evading arrest through a daring escape, he successfully slipped into the neighboring Gulbarga district (Karnataka), where he continued the freedom movement from hiding.</p>
+        <p><b>• Official Government Honor, Pension & Glorious Public Life:</b> Following India's independence, he earned a position of immense respect in the multi-faith society of Solapur. According to the official records of the Collector's Office, the Government of Maharashtra officially honored him on 7 December 1987 with a prestigious 'Sanman Patra' and granted the 'State Government Freedom Fighter Sanman Pension'. Additionally, the Solapur Municipal Corporation issued him a special Freedom Fighter Identity Card (No. 48) providing free bus travel. He was regularly invited as a Chief Guest for flag hosting ceremonies on Independence Day (15 August), Republic Day (26 January), and Maharashtra Day (1 May) at various government offices, the Collector's Office, and prominent schools and colleges in Solapur. He was also accorded an honorable status during the inauguration of various government development works and projects.</p>
+        <p><b>• Gratitude and Family Legacy Honor from the Government:</b> As a token of gratitude for his immense sacrifice as a patriot, his family was honored under special government provisions. Aligned with the official priority guidelines for the children of freedom fighters, his daughter received a secure government job, reflecting the respect expressed by the government toward his national service.</p>
+        <p><b>• A Glorious and Unbreakable Legacy:</b> On 25 May 2005, this great patriot breathed his last in Solapur. The legacy of honesty, patriotism, and social service earned by him is proudly preserved by his subsequent generations with equal pride. His family continues to hold a position of immense respect and honor among the public of Solapur.</p>
       </div>
+      <div style="height: 1px; background: var(--line); max-width: 200px; margin: 20px auto;"></div>
+      <p style="text-align: center; font-size: 14px; color: var(--muted); font-weight: bold; font-style: italic; margin-bottom: 0;">Solapur and our family salute the immense revolutionary spirit, sacrifice, and deep patriotism of a true national hero!</p>
     </div>
   </section>
 
@@ -176,34 +181,34 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
         <h3>Their Children</h3>
         <p>They were blessed with <b>8 daughters and 1 son</b>. The son, <b>Md. Saleem Ilahibaksh Shaikh</b> (Wife: Shaheen Shaikh, Senior Teacher), carries forward the family's values.</p>
         <hr style="border:0;border-top:1px solid var(--line);margin:25px 0">
-        <h3>The Next Generation</h3>
-        <div class="child" style="margin-bottom:10px"><b>Eldest Grandson:</b> Shahzeb Shaikh (Senior A. Loco Pilot, Indian Railways)</div>
-        <div class="child" style="margin-bottom:10px"><b>Granddaughter:</b> Shahnigar Shaikh (M.Sc. Physics - Gold Medalist)</div>
-        <div class="child"><b>Younger Grandson:</b> Shahfaroz Shaikh (Electrical Engineer)</div>
+        <h3>The Next Generation (Grandchildren)</h3>
+        <div class="children">
+          <div class="child">
+            <b>Eldest Grandson</b>
+            <span class="name">Shahzeb Shaikh</span>
+            <span class="meta">Senior A. Loco Pilot,<br>Indian Railways</span>
+          </div>
+          <div class="child">
+            <b>Granddaughter</b>
+            <span class="name">Shahnigar Shaikh</span>
+            <span class="meta">M.Sc. Physics -<br>Gold Medalist</span>
+          </div>
+          <div class="child">
+            <b>Younger Grandson</b>
+            <span class="name">Shahfaroz Shaikh</span>
+            <span class="meta">Electrical Engineer</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-  <section id="home-today">
-    <h2 class="section-title">The Family Home Today</h2>
-    <div class="home">
-      <img src="present-home.jpg" alt="Home">
-      <div class="card">
-        <h3>Present Family Home</h3>
-        <p><b>56, Mantri Chandak Estate, Nr Hotgi Road, Solapur, Maharashtra.</b></p>
-        <p>This is the family's present home, representing the continuing connection with Solapur.</p>
-        <a class="mapbtn" href="https://goo.gl" target="_blank" rel="noopener">View Location on Map</a>
-      </div>
-    </div>
-  </section>
-</div>
-<!-- ==========================================
-     MARATHI WRAPPER (पूर्ण रूप से शुद्ध मराठी)
+</div> 
+  <!-- ==========================================
+     MAIN MARATHI WRAPPER (पूर्ण रूप से शुद्ध मराठी)
      ========================================== -->
 <div id="main-marathi-wrapper" style="display:none;">
   <section id="life-mr">
     <h2 class="section-title">शौर्य आणि राष्ट्रसेवेचा जीवनप्रवास</h2>
-    <p class="subtitle">भावी पिढ्यांसाठी त्यांच्या मूल्यांचा, शौर्याचा आणि ऐतिहासिक शासकीय नोंदींचा जतन केलेला गौरवशाली वारसा.</p>
     <div class="facts">
       <div class="fact"><strong>१९२०</strong>सोलापूर जन्म</div>
       <div class="fact"><strong>१९४०</strong>चळवळीत सक्रिय</div>
@@ -218,13 +223,21 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
       <h3 style="text-align:center; color:var(--green); font-size:22px; font-weight:bold;">शासकीय सन्मान प्राप्त स्वातंत्र्य सैनिक</h3>
       <p style="text-align:center; font-size:20px; color:var(--gold); font-weight:bold; margin-top:-10px;">श्री शेख इलाहीबक्ष महंमदसाहेब (सोलापूर)</p>
       <div class="tricolor" style="margin:10px auto;"><span class="saffron"></span><span class="white"></span><span class="green"></span></div>
+      <p style="font-style: italic; color: var(--muted); text-align: center; font-size: 16px; max-width: 700px; margin: 15px auto 25px;">“ज्यांचे शौर्य, अथांग त्याग आणि प्रखर राष्ट्रनिष्ठा हाच आमचा खरा ऐतिहासिक वारसा आहे!”</p>
+      
       <div style="color:#333; font-size:15px; line-height:1.7;">
-        <p><b>• १९४० पासून सक्रिय सहभाग:</b> भारत देशाच्या मुक्तीसाठी काँग्रेस संघटनेत अत्यंत सक्रिय झाले. सोलापूर व महाराष्ट्रातील वरिष्ठ नेत्यांसोबत निष्ठापूर्वक कार्य केले.</p>
-        <p><b>• १९४२ चले जाव व भूमिगत लढा:</b> महात्मा गांधीजींच्या आंदोलनात स्वतःला झोकून दिले. पोलिसांच्या अटकेपासून वाचण्यासाठी भूमिगत राहून चळवळ सुरू ठेवली.</p>
-        <p><b>• चरित्रकोश नोंद (खंड ३, पृष्ठ ५८५):</b> शासकीय दस्तऐवजातील नोंद: <i>"या काळात भूमिगत कार्य; स्वातंत्र्य सैनिकांना रसद पुरविणे, प्रचारपत्रके वाटणे; पोलिसांकडून मारहाण."</i> त्यांनी पोलिसांच्या मारहाणीचा धैर्याने सामना केला.</p>
-        <p><b>• काँग्रेस पुस्तिका व पोलिसांचा छापा:</b> काँग्रेस जन्मशताब्दी पुस्तिकेत (नोंद ११९) आदरपूर्वक समावेश. रात्री गुप्तपणे पत्रके छापून उत्तर कसबा भागात चिकटविण्याचे धाडसी कार्य केले. घरावर सशस्त्र छापा टाकला असता, ते सुरक्षितपणे गुलबर्गा येथे निसटले.</p>
-        <p><b>• शासकीय सन्मान पत्र (७ डिसेंबर १९८७):</b> महाराष्ट्र शासनाने ७ डिसेंबर १९८७ रोजी त्यांना अधिकृत <b>‘सन्मान पत्र’</b> आणि स्वातंत्र्यसैनिक पेन्शन देऊन गौरविले. सोलापूर मनपातर्फे मोफत बस प्रवासासाठी ओळखपत्र (क्र. ४८) देण्यात आले.</p>
+        <p><b>• १९४० पासून देशसेवेत सक्रिय सहभाग व अखंड निष्ठा:</b> श्री शेख इलाहीबक्ष महंमदसाहेब हे सन १९४० पासूनच भारत देशाच्या मुक्तीसाठी आणि राष्ट्रसेवेच्या कार्यात काँग्रेस संघटनेत अत्यंत सक्रिय झाले होते. स्वातंत्र्य चळवळीदरम्यान त्यांनी सोलापूर व महाराष्ट्रातील अनेक प्रमुख स्वातंत्र्यसैनिक, वरिष्ठ राष्ट्रीय नेते आणि थोर राजकारण्यांच्या खांद्याला खांदा लावून अत्यंत एकनिष्ठेने व प्रामाणिकपणे कार्य केले.</p>
+        <p><b>• १९४२ चे ‘चले जाव’ आंदोलन आणि भूमिगत क्रांतिकारी लढा:</b> महात्मा गांधीजींच्या ‘भारत छोडो’ (चले जाव) आंदोलनादरम्यान त्यांनी इंग्रज सरकारच्या जुलमी राजवटीविरुद्ध आणि अन्यायकारक कायद्यांविरुद्ध स्वतःला पूर्णपणे झोकून दिले. ब्रिटिश पोलिसांच्या अटकेपासून वाचण्यासाठी त्यांनी भूमिगत राहून अत्यंत धाडसाने स्वातंत्र्यलढ्यात सक्रिय सहभाग घेतला.</p>
+        <p><b>• ‘चरित्रकोश खंड ३’ मधील ऐतिहासिक नोंद — भूमिगत कार्य आणि पोलिसांची मारहाण:</b> ‘स्वातंत्र्य सैनिक चरित्रकोश (पश्चिम विभाग, खंड ३)’ या शासकीय दस्तऐवजाच्या पृष्ठ ५८५ वर त्यांच्या नावावर असलेल्या अधिकृत नोंदीनुसार: "या काळात भूमिगत कार्य; स्वातंत्र्य सैनिकांना विविध पुरविणे, प्रचारपत्रके वाटणे इत्यादींमध्ये भाग; पोलिसांकडून मारहाण." देशाच्या स्वातंत्र्यासाठी गुप्तपणे भूमिगत चळवळ चालवणे, इतर स्वातंत्र्यसैनिकांना सर्वतोपरी मदत व सामग्री पुरवणे आणि जनजागृतीसाठी प्रचारपत्रके (बुलेटिन) वाटणे या अत्यंत धाडसी कामांमध्ये त्यांनी सक्रिय सहभाग घेतला. या राष्ट्रकार्यादरम्यान त्यांना ब्रिटिश पोलिसांच्या अमानुष मारहाणीचा आणि त्रासाचाही धैर्याने सामना करावा लागला.</p>
+        <p><b>• ‘काँग्रेस जन्मशताब्दी पुस्तिका’ मधील ऐतिहासिक नोंद:</b> त्यांच्या अतुलनीय राष्ट्रसेवेची आणि निःस्वार्थ त्यागाची दखल घेऊन काँग्रेसच्या जन्मशताब्दी पुस्तिकेत त्यांच्या नावाचा आणि क्रांतिकारी कार्याचा आदरपूर्वक समावेश करण्यात आला. ही नोंद त्यांच्या स्वातंत्र्यलढ्यातील योगदानाचा महत्त्वपूर्ण ऐतिहासिक दस्तऐवजी पुरावा आहे.</p>
+        <p><b>• जनजागृतीचे व आंदोलनाचे धाडसी कार्य:</b> ब्रिटिश सत्तेविरुद्ध जनतेच्या मनात स्वातंत्र्याची जाज्वल्य भावना निर्माण करण्यासाठी ते रात्रीच्या वेळी गुप्तपणे बुलेटिन (पत्रके) छापणे, झुकते माप न देता त्यांचे मोफत वाटप करणे तसेच सोलापूर व आसपासच्या परिसरातील (उत्तर कसबा परिसर) भिंतींवर देशभक्तीपर पत्रके चिकटविण्याचे अत्यंत धाडसी कार्य करीत असत.</p>
+        <p><b>• British पोलिसांचा सशस्त्र छापा व ऐतिहासिक फरारी:</b> त्यांच्या देशप्रेमी व क्रांतिकारी कार्यामुळे British पोलिसांचे लक्ष त्यांच्याकडे गेले. British पोलिसांनी त्यांच्या सोलापूरमधील घरावर सशस्त्र छापा टाकला. मात्र, पोलिसांच्या अटकेपासून बचाव करून ते सुरक्षितपणे शेजारच्या गुलबर्गा जिल्ह्यात (कर्नाटक) निसटले आणि तेथे भूमिगत राहून स्वातंत्र्याची चळवळ अविरतपणे सुरू ठेवली.</p>
+        <p><b>• शासकीय सन्मान, पेन्शन व गौरवशाली सार्वजनिक जीवन:</b> स्वातंत्र्यप्राप्तीनंतर ते सोलापूरमधील प्रतिष्ठित आणि सर्वधर्मीय समाजात अत्यंत आदराचे स्थान प्राप्त झालेले व्यक्तिमत्त्व होते. जिल्हाधिकारी कार्यालय (Collector Office) नोंदणी पुस्तिकेनुसार, त्यांच्या अथांग त्यागाबद्दल महाराष्ट्र शासनाने ७ डिसेंबर १९८७ रोजी त्यांना अधिकृत ‘सन्मान पत्र’ आणि ‘राज्य सरकार स्वातंत्र्यसैनिक पेन्शन’ (State Government Pension) देऊन गौरविले. तसेच सोलापूर महानगरपालिकेतर्फे त्यांना स्वातंत्र्यसैनिकांसाठीचे खास ओळखपत्र (क्रमांक ४८) देऊन मोफत बस प्रवास सुविधेचा लाभ देण्यात आला. स्वातंत्र्य दिन — १५ ऑगस्ट, प्रजासत्ताक दिन — २६ जानेवारी आणि महाराष्ट्र दिन — १ मे या राष्ट्रीय व राज्यस्तरीय महत्त्वाच्या दिनांचे औचित्य साधून विविध शासकीय कार्यालये, जिल्हाधिकारी कार्यालय तसेच सोलापूरमधील नामांकित शाळा व महाविद्यालयांकडून त्यांना ध्वजारोहणासाठी मुख्य अतिथी म्हणून आदरपूर्वक निमंत्रित केले जात असे. तसेच शासनाच्या विविध विकासकामांच्या व प्रकल्पांच्या उद्घाटनप्रसंगीही त्यांना सन्मानाचे स्थान दिले जात असे.</p>
+        <p><b>• कृतज्ञता आणि शासनातर्फे कौटुंबिक वारसा सन्मान:</b> एक देशभक्त म्हणून त्यांनी केलेल्या त्यागाची कृतज्ञता म्हणून शासनाच्या विशेष सवलती अंतर्गत त्यांच्या परिवाराला सन्मानित करण्यात आले. स्वातंत्र्यसैनिकांच्या पाल्यांना मिळणाऱ्या शासकीय प्राधान्यानुसार त्यांच्या मुलीला शासकीय नोकरी (Government Job) चा लाभ मिळाला, जो त्यांच्या देशसेवेप्रती शासनाने व्यक्त केलेल्या आदराचा एक भाग आहे.</p>
+        <p><b>• गौरवशाली आणि अभेद्य वारसा:</b> २५ मे २००५ रोजी या महान देशभक्ताचा ऐहिक जीवनप्रवास सोलापूर येथे संपला. त्यांनी कमावलेली इभ्रत, प्रामाणिकपणा, राष्ट्रनिष्ठा आणि समाजसेवेचा पवित्र वारसा आज त्यांच्या पुढील पिढ्यांकडेही तितक्याच अभिमानाने जतन केला जात आहे. सोलापूरच्या जनमानसात आजही त्यांच्या परिवाराला आदराचे आणि सन्मानाचे स्थान लाभत आहे.</p>
       </div>
+      <div style="height: 1px; background: var(--line); max-width: 200px; margin: 20px auto;"></div>
+      <p style="text-align: center; font-size: 14px; color: var(--muted); font-weight: bold; font-style: italic; margin-bottom: 0;">एका खऱ्या राष्ट्रभक्ताच्या अलोट क्रांतीकार्याला, त्यागाला आणि अथांग देशप्रेमाला सोलापूर व आमच्या परिवाराचे विनम्र अभिवादन!</p>
     </div>
   </section>
 
@@ -268,22 +281,23 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
         <p>त्यांना <b>८ कन्या आणि १ सुपुत्र</b> असा परिवार लाभला. सुपुत्र <b>मोहमद सलीम इलाहीबक्ष शेख</b> (पत्नी: शाहीन शेख, शिक्षिका) हा प्रामाणिकपणाचा वारसा सांभाळत आहेत.</p>
         <hr style="border:0;border-top:1px solid var(--line);margin:25px 0">
         <h3>पुढील पिढी (Grandchildren)</h3>
-        <div class="child" style="margin-bottom:10px"><b>नातू (Eldest Grandson)</b><span style="color:var(--green);font-weight:bold"> : Shahzeb Shaikh</span><br>वरिष्ठ ए. लोको पायलट, भारतीय रेल्वे</div>
-        <div class="child" style="margin-bottom:10px"><b>नात (Granddaughter)</b><span style="color:var(--green);font-weight:bold"> : Shahnigar Shaikh</span><br>एम.एस्सी. फिजिक्स (सुवर्णपदक विजेती)</div>
-        <div class="child"><b>नातू (Younger Grandson)</b><span style="color:var(--green);font-weight:bold"> : Shahfaroz Shaikh</span><br>इलेक्ट्रिकल इंजिनिअर</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="home-today-mr">
-    <h2 class="section-title">आजचे कौटुंबिक निवासस्थान</h2>
-    <div class="home">
-      <img src="present-home.jpg" alt="Home">
-      <div class="card">
-        <h3>कौटुंबिक निवासस्थान</h3>
-        <p><b>५६, मंत्री चंडक इस्टेट, होटगी रोडजवळ, सोलापूर, महाराष्ट्र.</b></p>
-        <p>हे कुटुंबाचे सध्याचे घर आहे, जे कुटुंबाचे सोलापूरशी असलेले अखंड नाते दर्शवते.</p>
-        <a class="mapbtn" href="https://goo.gl" target="_blank" rel="noopener">नकाशावर स्थान पहा</a>
+        <div class="children">
+          <div class="child">
+            <b>नातू (Eldest Grandson)</b>
+            <span class="name">शाहझेब शेख</span>
+            <span class="meta">वरिष्ठ ए. लोको पायलट,<br>भारतीय रेल्वे</span>
+          </div>
+          <div class="child">
+            <b>नात (Granddaughter)</b>
+            <span class="name">शाहनिगार शेख</span>
+            <span class="meta">एम.एस्सी. फिजिक्स -<br>सुवर्णपदक विजेती</span>
+          </div>
+          <div class="child">
+            <b>नातू (Younger Grandson)</b>
+            <span class="name">शाहफरोज शेख</span>
+            <span class="meta">इलेक्ट्रिकल इंजिनिअर</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -291,7 +305,7 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
 
 <section id="gallery" style="background:#efe3ca; max-width:none;">
   <h2 class="section-title">Historical Photos & Documents</h2>
-  <p class="subtitle">Selected photographs and original family records preserved as part of his legacy.</p>
+    <p class="subtitle">Selected photographs and original family records preserved as part of his legacy.</p>
   <div class="gallery">
     <figure><img src="portrait.png" alt="Portrait"><figcaption>Portrait of Freedom Fighter Ilahibaksh Shaikh</figcaption></figure>
     <figure><img src="couple.jpg" alt="Couple"><figcaption>Ilahibaksh Mohammedsahab Shaikh with wife Rasulbi</figcaption></figure>
@@ -303,6 +317,19 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
     <figure><img src="pension-register-2.jpg.jpg" alt="Pension 2"><figcaption>Collector Office RTI Record (Page 2)</figcaption></figure>
     <figure><img src="historical-record.jpg" alt="Record"><figcaption>Congress Centenary Booklet Record (Entry 119)</figcaption></figure>
     <figure><img src="freedom-movement.jpg" alt="Movement"><figcaption>Historical Photograph of Flag Hoisting</figcaption></figure>
+  </div>
+</section>
+
+<section id="home-today">
+  <h2 class="section-title">The Family Home Today / आजचे कौटुंबिक निवासस्थान</h2>
+  <div class="home">
+    <img src="present-home.jpg" alt="Home">
+    <div class="card">
+      <h3>Present Family Home / निवासस्थान</h3>
+      <p><b>56, Mantri Chandak Estate, Hotgi Road, Solapur, Maharashtra.</b></p>
+      <p>This is the family's present home, representing the continuing connection with Solapur.</p>
+      <a class="mapbtn" href="https://goo.gl" target="_blank" rel="noopener">View Location on Map / नकाशावर स्थान पहा</a>
+    </div>
   </div>
 </section>
 
