@@ -53,6 +53,10 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
     const wrapMr = document.getElementById('main-marathi-wrapper');
     const titleEn = document.getElementById('hero-en-title');
     const titleMr = document.getElementById('hero-mr-title');
+    const galEn = document.getElementById('gallery-en-content');
+    const galMr = document.getElementById('gallery-mr-content');
+    const homeEn = document.getElementById('home-today-en-wrapper');
+    const homeMr = document.getElementById('home-today-mr-wrapper');
     const btnEn = document.getElementById('btn-lang-en');
     const btnMr = document.getElementById('btn-lang-mr');
     const brand = document.getElementById('nav-brand');
@@ -63,17 +67,25 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
       if(wrapMr) wrapMr.style.display = 'block';
       if(titleEn) titleEn.style.display = 'none';
       if(titleMr) titleMr.style.display = 'block';
+      if(galEn) galEn.style.display = 'none';
+      if(galMr) galMr.style.display = 'block';
+      if(homeEn) homeEn.style.display = 'none';
+      if(homeMr) homeMr.style.display = 'block';
       btnMr.style.background = 'var(--gold)';
       btnMr.style.color = '#fff';
       btnEn.style.background = 'transparent';
       btnEn.style.color = 'rgba(255,255,255,0.7)';
       brand.innerHTML = 'श्री शेख इलाहीबक्ष महंमदसाहेब<small>स्वातंत्र्य सैनिक • समाजसेवक • वंशावळ वारसा</small>';
-      menu.innerHTML = '<a href="#home">होम</a><a href="#life-mr">बायोग्राफी</a><a href="#struggle-mr">स्वातंत्र्य लढा</a><a href="#recognition-mr">शासकीय सन्मान</a><a href="#family-mr">परिवार</a><a href="#gallery">ऐतिहासिक फोटो</a><a href="#home-today">निवासस्थान</a><div style="display:inline-flex; gap:5px; margin-left:10px; border:1px solid rgba(255,255,255,0.2); padding:2px; border-radius:20px; vertical-align:middle;"><button id="btn-lang-en" onclick="switchLang(\'en\')" style="background:transparent; color:rgba(255,255,255,0.7); border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">EN</button><button id="btn-lang-mr" onclick="switchLang(\'mr\')" style="background:var(--gold); color:#fff; border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">मराठी</button></div>';
+      menu.innerHTML = '<a href="#home">होम</a><a href="#life-mr">बायोग्राफी</a><a href="#struggle-mr">स्वातंत्र्य लढा</a><a href="#recognition-mr">शासकीय सन्मान</a><a href="#family-mr">परिवार</a><a href="#gallery">ऐतिहासिक फोटो</a><a href="#home-today-mr">निवासस्थान</a><div style="display:inline-flex; gap:5px; margin-left:10px; border:1px solid rgba(255,255,255,0.2); padding:2px; border-radius:20px; vertical-align:middle;"><button id="btn-lang-en" onclick="switchLang(\'en\')" style="background:transparent; color:rgba(255,255,255,0.7); border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">EN</button><button id="btn-lang-mr" onclick="switchLang(\'mr\')" style="background:var(--gold); color:#fff; border:0; padding:3px 10px; font-size:10px; font-weight:bold; border-radius:15px; cursor:pointer;">मराठी</button></div>';
     } else {
       if(wrapEn) wrapEn.style.display = 'block';
       if(wrapMr) wrapMr.style.display = 'none';
       if(titleEn) titleEn.style.display = 'block';
       if(titleMr) titleMr.style.display = 'none';
+      if(galEn) galEn.style.display = 'block';
+      if(galMr) galMr.style.display = 'none';
+      if(homeEn) homeEn.style.display = 'block';
+      if(homeMr) homeMr.style.display = 'none';
       btnEn.style.background = 'var(--gold)';
       btnEn.style.color = '#fff';
       btnMr.style.background = 'transparent';
@@ -83,6 +95,7 @@ section{padding:75px 7%;max-width:1400px;margin:auto}.section-title{text-align:c
     }
   }
 </script>
+
 
 <header class="hero" id="home" style="min-height:auto; padding:40px 5%; display:block; text-align:center;">
   <!-- इंग्लिश मुख्य नाम का पैकेट -->
